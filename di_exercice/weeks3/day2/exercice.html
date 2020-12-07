@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <h1> Some Facts </h1>
+        <h2 onclick="varible(this)"> The Chocolate </h2>
+        <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+        Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+        <p> After the European discovery of the Americas, chocolate became 
+        very popular in the wider world, and its demand exploded. </p>
+        <p> Chocolate has since become a popular food product that millions enjoy every day, 
+        thanks to its unique, rich, and sweet taste.</p> 
+        <p> But what effect does eating chocolate have on our health?</p> 
+    </article>
+    <form>
+        <label>What is your name?</label><input type="text" name="userName">
+        <label>What did you think of the article?</label><input type="text" name="questionToUser">
+    </form>
+
+    <script>
+       let element_p= document.querySelectorAll("p")
+
+for (let i = 0; i < element_p.length; i++) {
+   
+   element_p[i].setAttribute("class", "my_class");
+
+    
+}
+
+// retirer le dernier p 2
+
+p[p.length-1].remove()
+
+// question 3
+//function varible(x) {
+  //  x.remove();
+  
+  let h2 = document.getElementsByName("h2");
+  function varible() {
+      h2[0].remove();
+      
+  }
+    // avoir un nombre aliatoire entre 0 et 10 Math.random()*10
+    // arondit les nombres Math.floor(math.random()*10 )
+
+    //question 4
+let h1 = document.getElementsByTagName("h1")
+var be=Math.floor(Math.random()*100);
+h1.style.fontSize=be +"px";
+
+//question 5
+
+p[0].style.display="none";
+p[0].addEventListener("click",del);
+
+
+//question 6 recuperer les valeur de input ; creer la table , mettre les valeur dans les input ; et afficher la table  
+
+
+//}
+    </script>
+
+
+
+</body>
+</html>

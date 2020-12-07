@@ -1,0 +1,117 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script type="text/javascript" src="dom1.js"></script>
+    </head>
+    <body>
+       <!--
+        <div> users:</div>
+
+        <ul>
+            <li>john</li>
+            <li>pete</li>
+        </ul>
+        <script type="text/javascript">
+        //acceder au div dessus 
+
+        let div= document.getElementsByTagName("div");
+        let div1 = document.querySelector("div"); 
+        let div2 = document.body.firstElementChild;
+        console.log(div);
+        console.log(div1);
+        console.log(div2);
+
+        //acceder a ul 
+
+        let ul= document.getElementsByTagName("ul");
+        let ul1 = document.querySelector("ul"); 
+        let ul2= document.body.children[1];
+        let ul3 = document.body.lastElementChild;
+        let ul4= div1.nextSibling;
+        console.log(ul);
+        console.log(ul1);
+        console.log(ul2);
+        console.log(ul3);
+
+        let secondli= ul1.children[1];
+        let secondli1 = document.querySelector("ul:nth-child(1)");
+        let secondli2= ul1.lastElementChild;
+        // prender juste peter 
+        let peter = secondli.innerText;
+        let peter1 = secondli.textContent;
+
+        console.log(secondli);
+        console.log(secondli1);
+        console.log(secondli2);
+        console.log(peter);
+        console.log(peter1);
+
+        // creer un paragraphe 
+
+        let p = document.createElement("p");
+        p.innerHTML="<h5> inser moi entre la balise div </hr> ";
+            div1.appendChild(p); 
+            ul1.removeChild(secondli);// retire le li qui contien pete
+
+            // la syntaxe pour les style 
+            //Element.Style.property
+
+            document.body.style.backgroundColor="green"; //donner la couleur au bg
+
+            div.style.color="yellow";
+
+
+// ajouter egalement une image 
+ creation de l'image 
+
+        
+        </script>
+
+-->
+
+<div id="container"> users:</div>
+
+<ul class="list">
+    <li>john</li>
+    <li>pete</li>
+</ul>
+<ul class="list">
+    <li>sarah</li>
+    <li>dan</li>
+</ul>
+<script type="text/javascript">
+// access the dive node 
+document.getElementsByTagName("div")[0];
+document.getElementById("container");
+document.body.children[0];
+document.querySelector("div");
+document.querySelector("#container");
+
+let list_ul= document.querySelector("ul")
+
+for (let i = 0; i < ilst_ul.length; i++) {
+   console.log(list_ul[i].innerHTML);
+    
+}
+ </script>
+
+
+
+<p>
+    <a id="dI" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://developers.institute/">Developers Institute</a>
+</p> 
+
+<script>
+    //selectioner la balise a 
+    let a = document.querySelector("a")
+    //selectionner l'attribut href
+    a.getAttribute("href")
+    //retirer le style sur a
+    a.style.textDecoration="none"
+
+    
+</script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DraG</title>
+    
+    <style>
+        .droptarget {
+          float: left; 
+          width: 200px; 
+          height: 60px;
+          margin: 30px;
+          padding: 30px;
+          border: 1px solid #0ce6c8;
+        }
+        </style>
+</head>
+<body>
+	<p draggable='true' ondragstart="drag(event)" id="bennie">A deplacer</p>
+	<div style="border: 2px solid blue; width: 100px;height: 100px;" ondrop="drop(event);" ondragover='dragover(event);' ondragenter="dragenter();" ondragleave="dragleave();" ></div>
+	<div style="overflow: hidden;"><h1 draggable='true' ondragstart="dragstart(event)" ondragend="dragend(event)">Move with coordinates</h1></div>
+	<script type="text/javascript">
+		let h1 = document.querySelector('h1');
+		console.log(h1.style.top);
+		function dragstart(event){
+			console.log(event.clientX+ ' '+event.clientY)
+		};
+		function dragend(event){
+			let ordonne = event.clientX;
+			let abcisses = event.clientY;
+			event.target.style.left = ordonne +'px';
+			event.target.style.top= abcisses+'px';
+			event.target.style.position ='absolute';
+			console.log(ordonne+' '+abcisses);
+		}
+		let text = document.getElementById('bennie');
+		function drag(event){
+			event.dataTransfer.setData('text',event.target.id);
+			console.log(event.target);
+		}
+		function dragover(event){
+			event.preventDefault();
+		}
+		function drop(event){
+			console.log(event.target);
+			event.preventDefault();
+			event.dataTransfer.getData('text');
+			event.target.appendChild(text);
+		}
+    </script>	
+    
+
+    
+<p>Drag the p element back and forth between the two rectangles:</p>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+<p id="demo" style="font-size: 60px; color: crimson; text-transform: uppercase;"></p>
+
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+}
+
+function dragging(event) {
+  document.getElementById("demo").innerHTML = "The p element is being dragged";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("demo").innerHTML = "The p element was dropped";
+}
+</script>
+
+</body>
+</html>

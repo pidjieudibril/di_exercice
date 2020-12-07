@@ -1,0 +1,28 @@
+                 Daily Challenge : Tables Relationships
+Create 3 different tables, each one with a different relationship.
+Join them with all the types of PostgreSQL Joins
+
+Solutions :
+
+--CREATE TABLE tab1(id INTEGER, value1 TEXT);
+--CREATE TABLE tab2(id INTEGER, value2 TEXT);
+--CREATE TABLE tab3(id INTEGER, value3 TEXT);
+--INSERT INTO tab1 VALUES (1, 'a'), (2, 'b'), (3, 'c');
+--INSERT INTO tab2 VALUES (1, 'W'), (1, 'X'), (3, 'Y'), (5, 'Z');
+--INSERT INTO tab3 VALUES (1, 'i'), (2, 'j'), (3, 'k'), (4, 'l'), (6, 'm');
+--SELECT * FROM tab1 JOIN tab2 ON tab1.id = tab2.id;
+--SELECT * FROM tab1 INNER JOIN tab3 ON tab1.id = tab3.id; 
+--SELECT * FROM tab2 JOIN tab3 ON tab2.id = tab3.id;
+--SELECT * FROM tab1 LEFT JOIN tab2 ON tab1.id = tab2.id; 
+--SELECT * FROM tab1 LEFT JOIN tab3 ON tab1.id = tab3.id;
+--SELECT * FROM tab2 LEFT JOIN tab1 ON tab1.id = tab2.id;
+--SELECT * FROM tab3 LEFT JOIN tab2 ON tab3.id = tab2.id; 
+--SELECT * FROM tab1 FULL JOIN tab2 ON tab1.id = tab2.id; 
+--SELECT * FROM tab1 FULL JOIN tab3 ON tab1.id = tab3.id;
+--SELECT * FROM tab2 FULL JOIN tab3 ON tab2.id = tab3.id;
+--SELECT * FROM tab1 RIGHT JOIN tab3 ON tab1.id = tab3.id;
+--SELECT * FROM tab1 RIGHT JOIN tab2 ON tab1.id = tab2.id;
+--SELECT * FROM tab2 RIGHT JOIN tab3 ON tab2.id = tab3.id;
+
+
+

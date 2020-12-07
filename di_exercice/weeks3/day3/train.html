@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ #train {
+        position: relative;
+        cursor: pointer;
+      }
+</style>
+   
+</head>
+<body>
+
+    <img id="train" src="train.jpg">
+
+
+
+
+
+    <script>
+        let train = document.getElementById('train')
+
+// click event
+train.addEventListener("click", trainPassing)
+
+function trainPassing() {
+      let start = Date.now(); // start date
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+        console.log(timePassed)
+        train.style.left = timePassed / 5 + 'px';
+        if (timePassed > 2000) {
+          clearInterval(timer);
+        }
+      }, 20);
+
+
+     
+    }
+    </script>
+
+    <!-- 
+        function myMove() {
+  var elem = document.getElementById("animate");
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + 'px';
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+        
+        pour deplacer un element utilise     draggable
+        Spécifiez Ce Qui Doit Se Passer Lorsque L'élément Est Glissé:                  Ondragstart
+        méthode définit le type de données et la valeur des données déplacées         event.dataTransfer.setData()
+         Spécifie Où Les Données Glissées Peuvent Être Déposées:                       Ondragover
+         pour empêcher la gestion par défaut des données du navigateur                  preventDefault()
+         Récupérez les données glissées avec la                                          dataTransfer.getData()
+         Après La Suppression Des Données:événement                                     Ondrop
+    -->
+
+
+    <p draggable="true" ondragstart="drag" id="dibril">a deplacer</p>
+    <div style="border: 2px solid black; height: 100px;" ondrop="drop();" ondragover="dragover();" ondragenter="dragenter();" dragreve ></div>
+ <h1 draggable="true" ondragstart="dragstart(event)" ondragend="dragend(event)">move with coordinates</h1>
+ 
+ <script>
+     function dragstart(event) {
+         console.log(event.clientX+ " "+event.clientY)
+         
+     };
+     function dragend(event) {
+         let ordonne= event.clientX;
+         let abcisses= event.clientY
+         h1.style.top = ordonne + "px";
+         h1.style.left = abcisses + "px"
+         
+     }
+     function drag(event) {
+         event.dataTranfer.setData
+         
+     }
+ </script>
+
+</body>
+</html>

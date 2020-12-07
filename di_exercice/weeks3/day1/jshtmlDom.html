@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+</head>
+<body>
+  
+    
+    <!--
+        les methodes 
+        ce sont les action que vous pouvez effectuer sur les elements html
+        document.getElementById(id) rechercher les elements par id
+        document.getElementsByTagName(name) rechercher les elements par non de balise 
+        document.getElementsByClassName(name) rechercher les nom par classe 
+        element.setAttribute(attribute, value) modifie la valeur d'un attribut html
+
+
+        Changing HTML Elements(modification des elemnts html)
+
+        element.innerHTML =  new html content	Change the inner HTML of an element
+        element.attribute = new value	Change the attribute value of an HTML element
+        element.style.property = new style	Change the style of an HTML element
+
+        Ajout et suppression d'éléments (methode)
+     document.createElement(element)	Create an HTML element
+    document.removeChild(element)	Remove an HTML element
+    document.appendChild(element)	Add an HTML element
+    document.replaceChild(new, old)	Replace an HTML element
+    document.write(text)	Write into the HTML output stream
+
+    Adding Events Handlers (ajout de getionnaire d'evenement)
+    document.getElementById(id).onclick=funtion(){    Ajout du code du gestionnaire d'événement à un événement onclick
+        code
+    }document.getElementById(id).onclick = function(){code}	Adding event handler code to an onclick event
+
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementsByClassName("intro");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+</script> resutat est le suivant The first paragraph (index 0) with class="intro": The DOM is very useful.
+
+    -->
+
+    <h2>Finding HTML Elements by Query Selector</h2>
+
+<p>Hello World!</p>
+
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.querySelectorAll("p.intro");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+</script>
+
+<!--
+    Cet exemple recherche l'élément de formulaire avec id = "frm1", 
+    dans la collection de formulaires, et affiche toutes les valeurs d'élément:
+-->
+<h2>Finding HTML Elements Using document.forms</h2>
+
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname" value="pid"><br>
+  Last name: <input type="text" name="lname" value="rick"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.forms["frm1"];
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+<img id="image" src="smiley.gif" width="160" height="120">
+
+<script>
+    //changer l'attribut de l'image
+document.getElementById("image").src = "landscape.jpg";
+
+
+
+
+var id = setInterval(frame, 5);
+
+function frame() {
+  if (/* test for finished */) {
+    clearInterval(id);
+  } else {
+    /* code to change the element style */ 
+  }
+}
+
+
+</script>
+
+<!-- animation-->
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+
+</body>
+</html>

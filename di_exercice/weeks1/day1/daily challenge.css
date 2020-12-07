@@ -1,0 +1,91 @@
+#nav {
+	margin: 0;
+    /* text-align: center; */
+    float: right;
+    margin-top: 15px;
+    background-color: black;
+    padding: 20px;
+    vertical-align: top;
+    padding-left: 218px;
+}
+nav{
+    display: inline-block;
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+}
+#nav li {
+	display: inline;
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    background-color: yellow;
+    padding: 20px;
+
+   
+}
+#nav a {
+	display:inline-block;
+    margin: 0 30px;
+    text-decoration: none;
+    text-transform: none;
+    background-color: white;
+    color: black;
+}
+img{
+    width: 90px;
+    height: 56px;
+    padding-left: 30px;
+    padding-top: 10px;
+    
+
+    }
+nav ul {
+    float: right;
+}
+a:hover{
+    color: tomato;
+}
+.corps{
+    background-image: url("avengersimage.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 407px;
+    margin-top: -43px;
+    color: ghostwhite;
+}
+.corps h2{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 66px;
+}
+
+.corps p{
+    font-size: 20px;
+    text-align: center;
+}
+#foot{
+    background-color: blue;
+    width: 100%;
+    background-size: cover;
+    margin-top: -30px;
+    color: white;
+    font-size: 40px;
+    padding: 50px;
+
+}
+#foot a {
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+}
+
+#foot li {
+	
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+   }

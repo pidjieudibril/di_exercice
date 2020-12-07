@@ -1,0 +1,38 @@
+body{
+    background-color: turquoise;
+}
+
+#container{
+    display: flex;
+   flex-flow: column wrap;
+    flex-direction: column;
+   text-align: center;
+    justify-content: space-around;
+    height: 1000px;
+    max-width:1200px;
+ padding:0 15px;
+ margin:0 auto;
+ min-width:33%;
+ background-color: white;
+
+}
+#container div{
+    background-color:blue;
+    border: 2px solid black;
+  
+}
+#one{
+height: 100px;
+}
+#two{
+height: 300px;
+align-self: center;
+width: 800px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#three{
+height: 100px;
+}

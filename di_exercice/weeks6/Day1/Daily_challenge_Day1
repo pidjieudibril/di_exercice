@@ -1,0 +1,7 @@
+--SELECT * FROM actors
+--SELECT COUNT(*) FROM actors
+--INSERT INTO actors (first_name, last_name, age, number_oscars)
+--VALUES
+--('Jason','Bourne', '10-02-1976 ', 3)
+--('Van','Damme', '10-02-1973', )
+When you try to add an actor with blank fields an error is return...

@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="display: none;">the sale end in 10 minutes !</h1>
+
+    <script>
+        function displayh1() {
+            let h1 = document.querySelector("h1");
+            h1.style.display="block";
+            
+        };
+        setInterval(displayh1,2000)
+    </script>
+
+
+
+<h1 style="display: none;">!</h1>
+<p id="demo"></p>
+
+<button onclick="myStopFunction()">Stop time</button>
+
+<script>
+    let t=10;
+let timer = setInterval(myTimer, 1000);
+
+function myTimer() {
+    let h1 = document.querySelector("h1");
+  h1.innerHTML=`the sales end in ${t} seconde`;
+  
+  t--;
+  
+
+  function myStopFunction(params) {
+
+clearInterval(timer);
+
+}
+
+if (t<0){
+      clearInterval(timer);
+  }
+};
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+          <div id="animate" draggable="true" ondragstart="dragstart(event)" ondragend="dragen(event)" </div>
+        </div>
+
+
+<script>
+
+        //  let box = document.getElementById('animate');
+        //  function myMove(){
+        //      let start =  Date.now();
+        //      let time = setInterval(function(){
+        //          let newT = Date.now() - start;
+        //          console.log(newT);
+        //          box.style.left = newT + 'px';
+                 
+        //          if (newT > 350 )
+        //          clearInterval(time);
+        //      })
+        //  }
+       
+        function myMove(){
+        let box = document.getElementById('animate');
+        let pos=0;
+        let id = setInterval (function (){
+            if (pos == 350){clearInterval(id)}
+            else pos++
+            box.style.left = pos + 'px'
+        },10);
+          
+        }
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

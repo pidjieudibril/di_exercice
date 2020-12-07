@@ -1,0 +1,14 @@
+body{
+    background-color: gainsboro!important;
+}
+
+.font-weight-bold {
+    /* font-weight: 708!important; */
+    color: #ffc107!important;
+}
+
+#bk2 {
+  
+    padding: 20px 0px 20px 30px!important;
+    margin-top: 20px!important;
+}

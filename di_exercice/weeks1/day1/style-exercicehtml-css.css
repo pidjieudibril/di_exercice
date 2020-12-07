@@ -1,0 +1,140 @@
+
+body{
+    background-color: rgb(172, 182, 185);
+ background-repeat:no-repeat;
+ margin:0;
+ padding:0;
+ -webkit-background-size: cover; 
+ background-size: cover;
+ width:100%;
+ margin:auto;
+ min-width:33%;
+ background-position: center;
+}
+
+.container
+  {
+ max-width:1200px;
+ padding:0 15px;
+ margin:0 auto;
+ min-width:33%;
+ }
+ h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 62px 40px 53px 40px;
+ }
+ #but{
+     float: right;
+     color: white;
+     background-color: blue;
+     padding: 4px;
+     margin: 7px 68px 10px 0;
+ }
+
+input{
+    padding: 8px;
+    margin-bottom: 55px;
+}
+ .envoie{
+    background-color: blue;
+   
+    color: white;
+    padding: 8px;
+    margin-bottom: 55px;
+}
+ .section1{
+    padding: 14px 0 0 76px;
+   
+}
+#menuone{
+   float: left;
+text-decoration: none;
+text-transform: none;
+}
+#menutwo{
+
+text-decoration: none;
+text-transform: none;
+float: right;
+}
+
+.section2{
+    background-image: url("Exercise HtmlPage 1.png");
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    margin: 0px;
+}
+
+.section3{
+    margin-top: 20px;
+}
+
+.sec3{
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    text-align: center;
+}
+.sec3 p{
+    width: 300px;
+    color: gray;
+    text-align: center;
+    padding-left: 30px;
+}
+
+table {
+    width:100%;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  #t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  #t01 tr:nth-child(odd) {
+   background-color: #fff;
+  }
+  #t01 th {
+    background-color: black;
+    color: white;
+  }
+  
+  .exercice2, .exercice1{
+      text-align: center;
+      font-size: 40px;
+  }
+  .exercice2 ol ul li {
+      text-align: center;
+  }
+
+  .leh3{
+      text-align: center;
+     
+  }
+  .lebas{
+      display: inline-block;
+      text-align: center;
+
+  }
+  .behavior{
+    padding: 0 96px 0 151px;
+  }
+  .bas1{
+
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+  }
+  .bas{
+      width: 45%;
+      display: inline-block;
+
+  }

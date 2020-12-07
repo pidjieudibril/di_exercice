@@ -1,0 +1,108 @@
+        Exercise XP
+            
+            Exercise 1
+Create a database named public and two tables : items and customers.
+solution : CREATE TABLE items (name VARCHAR(50) NOT NULL, price SMALLINT NOT NULL)
+           CREATE TABLE customers (first_name VARCHAR(50) NOT NULL, last_name VARCHAR NOT NULL)
+
+Read first all the instructions to determine which columns to add in the table
+
+1.Add the following new items to the public.items table:
+Small Desk – 100 (ie. price)
+Large desk – 300
+Fan – 80
+solution :
+--INSERT INTO items (name, price)
+--VALUES
+--('Small Desk',100 ),
+--('Large Desk',300 ),
+--('Fan',80 );
+
+2.Add 5 new customers to the public.customers table:
+Greg Jones
+Sandra Jones
+Scott Scott
+Trevor Green
+Melanie Johnson
+solution: 
+--INSERT INTO customers (first_name, last_name)
+--VALUES
+--('Greg', 'Jones'),
+--('Sandra', 'Jones'),
+--('Scott', 'Scott'),
+--('Trevor', 'Green'),
+--('Melanie', 'Johnson');
+
+3.Use SQL to get the following data from the database:
+All the items
+All the items with a price above 80 (80 not included)
+All the items with a price below 300
+All the customers with the last name ‘Smith’ (Will you get a result ?)
+All the customers with the last name ‘Jones’
+All the customers with a first name that is not ‘Scott’
+solution :
+1.--SELECT * FROM items
+2.--SELECT * FROM items WHERE price >80
+3.--SELECT * FROM items WHERE price <300
+4.--SELECT * FROM customers WHERE last_name = 'Smith' (There is no last_name with Smith)
+5.--SELECT * FROM customers WHERE last_name = 'Jones'
+6.--SELECT * FROM customers WHERE first_name != 'Scott'
+
+
+
+       Exercise XP Gold
+       
+                 Exercise 1
+For this exercise, you will have to find some requests by yourself !
+
+Create
+Create a database named bootcamp.
+
+Insert
+Insert the above data to the table. Find a way to make it quick.
+Insert your last_name, first_name and birth_date in the table. (Check the id of this new row)
+Select
+Fetch all the data from the table.
+Fetch all the students first_name and last_name.
+For the following questions, only fetch the first_name and last_name of the students.
+Fetch the student which id is equal to 2.
+Fetch the student with the last_name Benichou AND the first_name Marc.
+Fetch the students with the last_name Benichou OR the first_name Marc.
+Check the difference between the request 2 and 3.
+Fetch the students which first_name contains the letter a.
+Fetch the students which first_name starts with the letter a.
+Fetch the students which first_name ends with the letter a.
+Fetch the students where the second to last letter of the first_name is a (Example: Leah).
+Fetch the students which the id are 1 AND 3
+
+Fetch the students, which birth_date is equal or after the 1/01/2000. (show their first_name, last_name and birth_date)
+
+Solutions : 
+
+--CREATE TABLE students(
+--id SERIAL PRIMARY KEY,
+--first_name VARCHAR(50) NOT NULL,
+--last_name VARCHAR(50) NOT NULL,
+--birth_date DATE NOT NULL
+--)
+--INSERT INTO students(first_name, last_name, birth_date)
+--VALUES
+--('Marc','Benichou', '02/11/1998'),
+--('Yoan','Cohen', '03/12/2010'),
+--('Lea','Benichou', '27/07/1987'),
+--('Amelia','Dux', '07/04/1996'),
+--('David','Grez', '14/06/2003'),
+--('Omer','Simpson', '03/10/1980');
+
+--INSERT INTO students(first_name, last_name, birth_date)
+--VALUES ('Serge', 'Demanou', '13/03/1989')
+--SELECT * FROM students
+--SELECT first_name, last_name FROM students WHERE id=2
+--SELECT first_name, last_name FROM students WHERE first_name='Marc' AND last_name='Benichou'
+--SELECT first_name, last_name FROM students WHERE first_name='Marc' OR last_name='Benichou'
+--SELECT first_name FROM students WHERE first_name LIKE '%a%'
+--SELECT first_name FROM students WHERE first_name LIKE 'A%'
+--SELECT first_name FROM students WHERE first_name LIKE '%a'
+--SELECT first_name FROM students WHERE first_name LIKE '__a'
+--SELECT first_name, last_name FROM students WHERE id IN (1,3)
+--SELECT first_name, last_name, birth_date FROM students WHERE birth_date >= ' 01-01-2000'

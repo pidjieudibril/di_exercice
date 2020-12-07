@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+          width: 100%;
+          height: 700px;
+          position: relative;
+          background: yellow;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+         /* background-color: red;*/
+        }
+
+        #animate2 {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          float: right;
+        
+          display: flex;
+          flex-direction: right;
+        }
+        </style>
+    </head>
+    <body>
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+          <div id="animate"><img src="vole.gif" alt="il vole"></div>
+          <div id="animate2"><img src="vole2.gif"></div>
+        </div>
+
+        <script>
+
+            let bouge_elts= document.getElementById("animate");
+         
+            function myMove() {
+                let start = Date.now();
+                let temps = setInterval(function () {
+                    let tP = Date.now() - start;
+                    console.log(tP);
+                    bouge_elts.style.right = tP + 'px';
+
+                    if (tP > 350) {
+          clearInterval(temps);
+        }
+                    
+                },300);
+                
+            }
+
+          
+        </script>
+
+        <script>
+              let bouge_elts= document.getElementById("animate2");
+         
+         function myMove() {
+             let start = Date.now();
+             let temps = setInterval(function () {
+                 let tP = Date.now() - start;
+                 console.log(tP);
+                 bouge_elts.style.right = tP + 'px';
+
+                 if (tP > 350) {
+       clearInterval(temps);
+     }
+                 
+             },300);
+             
+         }
+        </script>
+    
+</body>
+</html>

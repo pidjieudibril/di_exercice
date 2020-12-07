@@ -1,0 +1,87 @@
+body{
+    background-color: cornflowerblue;
+ background-repeat:no-repeat;
+ margin:0;
+ padding:0;
+ -webkit-background-size: cover; 
+ background-size: cover;
+ width:100%;
+ margin:auto;
+ min-width:33%;
+ background-position: center;
+}
+
+.container
+  {
+ max-width:1200px;
+ padding:0 15px;
+ margin:0 auto;
+ min-width:33%;
+ }
+
+ .head{
+     background-color: cornflowerblue;
+     display: inline-block;
+     width: 100%;
+     background-size: cover;
+ }
+ h1{
+    background-color: blue;
+    size: 30px;
+    width: 100%;
+    background-size: cover;
+    margin-top: 0;
+    padding: 26px 0 23px 0px;
+ }
+ form{
+    line-height: 44px;
+    color: white;
+    float: left;
+font-size: 20px;
+ }
+ img{
+    float: right;
+    margin: 0;
+    font-variant-position: sub;
+    display: inline-block;
+    width: 27%;
+    padding-left: 179px;
+    vertical-align: top;
+    margin: -41px 20px 8px 143px;
+ }
+ #date{
+    float: right;
+    padding: 10;
+    margin: -41px 10px 10px 10px;
+ }
+ .form1 {
+     display: inline-block;
+ }
+ #mail{
+    height: 40px;
+    margin-left: 29px;
+     padding-left: 10px;
+ }
+ #name{
+    height: 40px;
+    padding-left: 10px;
+    margin-left: 42px;
+ }
+ #phone{
+    height: 40px;
+    padding-left: 10px;
+}
+ }
+ #adress{
+    height: 40px;
+    margin-left: 18px;
+    padding-left: 10px;
+ }
+ .leh2{
+    background-color: blue;
+    size: 30px;
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+    padding: 26px 0 23px 0px;
+ }

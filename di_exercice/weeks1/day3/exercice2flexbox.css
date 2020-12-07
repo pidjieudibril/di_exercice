@@ -1,0 +1,146 @@
+body{
+    background-color: turquoise;
+}
+
+#container{
+    display: flex;
+   flex-flow: column wrap;
+    flex-direction: column;
+   text-align: center;
+    justify-content: space-around;
+    height: 1000px;
+    max-width:1200px;
+ padding:0 15px;
+ margin:0 auto;
+ min-width:33%;
+ background-color: white;
+
+}
+#container div{
+    background-color:blue;
+    border: 2px solid black;
+  
+}
+#one{
+height: 100px;
+}
+#two{
+height: 200px;
+align-self: flex-end;
+width: 150px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#three{
+height: 100px;
+}
+p{
+    font-size: 40px;
+}
+
+
+
+
+/*exo3*/
+#container3{
+    display: flex;
+max-width:1200px;
+ padding:0 15px;
+ margin:0 auto;
+ min-width:33%;
+ background-color: white;
+border: 8px solid rosybrown;
+}
+#container3 div{
+    text-align: center;
+    /* border: 2px solid black; */
+    align-items: center;
+    margin: 50px 0 50px 0;
+    color: white;
+    font-size: 35px;
+    padding: 15px;
+
+  
+}
+#one3{
+    height: 50px;
+    background-color: purple;
+    width: 25%;
+}
+#two3{
+height: 50px;
+background-color: skyblue;
+width: 45%;
+}
+#three3{
+height: 50px;
+background-color: tomato;
+width: 45%;
+}
+p{
+    font-size: 40px;
+    }
+
+    /*grid*/
+    #container-grid{
+        display: grid;
+        grid-template-rows:repeat(4, 200px);
+        grid-template-columns:300px 700px;
+        grid-template-areas: 
+        "one four"
+        "two five"
+        "three six"
+        "seven seven";
+    max-width:1200px;
+     padding:0 15px;
+     margin:0 auto;
+     min-width:33%;
+     background-color: white;
+    border: 8px solid black;
+    grid-row-gap:30px;
+    grid-column-gap:40px;
+    justify-content: center;
+    }
+  
+    #onegrid{
+        grid-area: one;
+    }
+    #twogrid{
+        grid-area: two;
+
+    }
+    #theegrid{
+        grid-area: three;
+    }
+    #fourgrid{
+        grid-area: four;
+    }
+    #fivegrid{
+        grid-area: five;
+    }
+      #sixgrid{
+          grid-area: six;
+
+      }
+      #sevengrid{
+          grid-area: seven;
+      }
+    
+    #onegrid{
+       grid-area: one;
+      background-color: hotpink;
+    }
+    #twogrid{
+    grid-area: two;
+    background-color: lightblue;
+    }
+    #sevengrid{grid-area: three;
+        background-color: yellow;
+   
+    }
+    p{
+        font-size: 40px;
+        }
+    

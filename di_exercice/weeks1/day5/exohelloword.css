@@ -1,0 +1,20 @@
+.navbar-light .navbar-nav .nav-link a .active{
+    color:white!important;
+}
+.navbar-light .navbar-nav .nav-link {
+    /* color: rgba(0,0,0,.5); */
+    color:white!important;
+    opacity: inherit!important;
+}
+.btn-outline-success {
+    color: white!important;
+    border-color: #28a745;
+    background-color: #28a745!important;
+    margin-left: 5px!important;
+
+
+}
+.form-control {
+   
+    margin-left: 6px!important;
+}

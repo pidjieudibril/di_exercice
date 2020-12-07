@@ -1,0 +1,31 @@
+Exercise 2 : Dvdrental Database
+
+Write a query to select all the columns from the table “customer” in the database named dvdrental.
+solution : SELECT * FROM customer;
+
+Write a query to display the names (first_name, last_name) using an alias named “full_name”.
+solution : SELECT (first_name, last_name) AS full_name FROM customer;
+
+You want to know every date where one or several accounts were created. Write a query to select the dates of creation from the “customer” table, it shouldn’t have duplicates.
+solution : SELECT DISTINCT create_date FROM customer;
+
+Write a query to get the details of all customers from the customer table in descending order by their first name.
+solution : SELECT DISTINCT first_name FROM customer ORDER BY first_name DESC;
+
+Write a query to get the film ID, title, description, year of release and rental rate in ascending order according to their rental rate.
+solution : SELECT * FROM film ORDER BY rental_rate ASC;
+
+Write a query to get the address, the district and the phone number from the customers living in the district Texas in the “address” table.
+solution : SELECT address, district, phone FROM address WHERE district = 'Texas';
+
+Write a query to retrieve the details of the movies with the id 15 and 150.
+solution : SELECT * FROM film WHERE film_id IN (15, 150);
+
+Pick your favorite movie. Write a query to see if the rental shop owns it. Write a query to get the film ID, the title, the description, the length and the rental rate from the film table for your movie title.
+solution : SELECT film_id, title, description, rental_rate, length FROM film WHERE title = 'Titanic Boondock';
+
+Didn’t find it ? Maybe you made a mistake in the name. Write a query to get the film ID, the title, the description, the length and the rental rate from the “film” table for all the movies starting with the two first letters of your movie.
+solution : SELECT film_id, title, description, rental_rate, length FROM film WHERE  title LIKE 'Ti%'
+
+You want to have a choice between ten propositions of movies and you want the cheapest ones. Write a query to find the 10th cheapest movies.
+solution : SELECT title, rental_rate FROM film ORDER BY rental_rate LIMIT 10;+

@@ -1,0 +1,102 @@
+body{
+    background-color: white;
+ background-repeat:no-repeat;
+ margin:0;
+ padding:0;
+ -webkit-background-size: cover; 
+ background-size: cover;
+ width:100%;
+ margin:auto;
+ min-width:33%;
+ background-position: center;
+}
+
+.container
+  {
+ max-width:1200px;
+ padding:0 15px;
+ margin:0 auto;
+ min-width:33%;
+ }
+
+ .form1
+ {
+    background-color: #fafafa;
+     width: 49%; 
+    height: 600px;
+    /* margin: 0px; */
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+ }
+ .form2{
+    background-color: #6f2581;
+     width: 49%; 
+    height: 600px;
+    display: inline-block;
+    text-align: center;
+ }
+
+ .form11{
+     padding: 10px 10px 10px 10px;
+ }
+ .form22{
+     padding: 10px 10px 10px 10px;
+ }
+  .form22 .fa{
+    color: white;
+    font-size: 118px;
+    padding-top: 101px;
+ }
+
+ .form22 h2, p{
+     color: white;
+ }
+ .form22 h2{
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.form22 img{
+    position: absolute;
+    right: 290px;
+    top: 376px;
+}
+
+ 
+ 
+ 
+ input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+  .form22 input[type=submit] {
+    background-color: #6f2581;
+    color: white;
+    padding: 24px 36px;
+    margin: 8px 0;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 189px;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color:  #6f2581;
+    border: 1px solid  #6f2581;
+}
+input[type=submit] {
+    background-color:  #6f2581;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    }
